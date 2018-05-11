@@ -1,2 +1,3 @@
-package_lock.json
+package-lock.json
 workspace.xml
+node_modules

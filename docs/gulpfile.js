@@ -71,6 +71,7 @@ gulp.task('css:compile', function() {
 gulp.task('css:minify', ['css:compile'], function() {
   return gulp.src([
       './css/*.css',
+      '../gdpr.css',
       '!./css/*.min.css'
     ])
     .pipe(cleanCSS())
@@ -88,6 +89,7 @@ gulp.task('css', ['css:compile', 'css:minify']);
 gulp.task('js:minify', function() {
   return gulp.src([
       './js/*.js',
+      '../gdpr.js',
       '!./js/*.min.js'
     ])
     .pipe(uglify())

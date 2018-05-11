@@ -10,6 +10,7 @@ var GDPR = function(element, euURL) {
 
   // Check for existing answers
   var existingAnswer = this._loadAnswer();
+  console.debug('Answer is ' + existingAnswer);
   if (existingAnswer === null) {
     this._openModal();
   } else if (existingAnswer === 'yes') {
@@ -20,7 +21,9 @@ var GDPR = function(element, euURL) {
 GDPR.prototype = {
   _handleNoClick: function() {
     this._storeAnswer('no');
+    this.overlay.parentNode.removeChild(this.overlay);
     this.element.style.display = 'none';
+    document.documentElement.style.overflow = '';
   },
 
   _handleYesClick: function() {
@@ -34,6 +37,14 @@ GDPR.prototype = {
 
   _openModal: function() {
     console.debug('No answer');
+    document.documentElement.style.overflow = 'hidden';
+
+    // Create the overlay
+    this.overlay = document.createElement('DIV');
+    this.overlay.setAttribute('style', 'background: rgba(0, 0, 0, 0.5); display: block; height: 100%; left: 0; position: fixed; top: 0; width: 100%; z-index: 9999');
+    document.body.insertBefore(this.overlay, document.body.firstChild);
+
+    // Setup the dialog
     var yesButton = this.element.querySelector('.yes-button');
     if (yesButton === null) {
       throw 'GDPR modal dialog is missing an element with a class="yes-button"';
@@ -45,6 +56,8 @@ GDPR.prototype = {
 
     yesButton.addEventListener('click', this._handleYesClick.bind(this), false);
     noButton.addEventListener('click', this._handleNoClick.bind(this), false);
+
+    // Open the dialog
     this.element.style.display = 'block';
   },
 

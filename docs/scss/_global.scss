@@ -14,7 +14,8 @@ h6 {
 
 // Custom Horizontal Rule with Star Icon
 hr.star-light,
-hr.star-dark {
+hr.star-dark,
+hr.star-danger {
   max-width: 15rem;
   padding: 0;
   text-align: center;
@@ -22,25 +23,30 @@ hr.star-dark {
   border-top: solid 0.25rem;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+
+  &:after {
+    position: relative;
+    top: -.8em;
+    display: inline-block;
+    padding: 0 0.25em;
+    content: '\f005';
+    font-family: FontAwesome;
+    font-size: 2em;
+  }
 }
 
-hr.star-light:after,
-hr.star-dark:after {
-  position: relative;
-  top: -.8em;
-  display: inline-block;
-  padding: 0 0.25em;
-  content: '\f005';
-  font-family: FontAwesome;
-  font-size: 2em;
-}
-
-hr.star-light {
+hr.star-light,
+hr.star-danger {
   border-color: $white;
 }
 hr.star-light:after {
   color: $white;
   background-color: $primary;
+}
+
+hr.star-danger:after {
+  color: $white;
+  background-color: #dc3545;
 }
 
 hr.star-dark {
