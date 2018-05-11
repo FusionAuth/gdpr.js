@@ -1,6 +1,10 @@
 // Typography
 body {
   @include body-font;
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+  width: 100%;
 }
 
 h1,
