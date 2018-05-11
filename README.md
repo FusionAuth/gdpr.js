@@ -48,6 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
 }, false);
 ```
 
+The first parameter to the constructor is the popup element and the second is the URL (or a fragment) that the user should be taken to if they are an EU citizen or in the EU currently.
+
 That's it!
 
 ## Bugs and Issues

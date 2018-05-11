@@ -3,6 +3,7 @@
  * dialog for the GDPR question and it will handle the rest.
  *
  * @param {HTMLElement} element The modal dialog element.
+ * @param {String} euURL The URL (or a fragment) to take the user to if they are an EU citizen on in the EU.
  */
 var GDPR = function(element, euURL) {
   this.element = element;
@@ -10,7 +11,6 @@ var GDPR = function(element, euURL) {
 
   // Check for existing answers
   var existingAnswer = this._loadAnswer();
-  console.debug('Answer is ' + existingAnswer);
   if (existingAnswer === null) {
     this._openModal();
   } else if (existingAnswer === 'yes') {
@@ -36,7 +36,6 @@ GDPR.prototype = {
   },
 
   _openModal: function() {
-    console.debug('No answer');
     document.body.style.overflow = 'hidden';
 
     // Create the overlay
