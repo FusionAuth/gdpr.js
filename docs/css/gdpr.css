@@ -1,1 +1,12 @@
-../../gdpr.css
+/* CSS file for the GDPR.js library */
+
+.gdpr-modal {
+  background: white;
+  /*display: none !important;*/
+  height: 400px;
+  left: calc(50vw - 150px);
+  position: absolute;
+  top: calc(50vh - 200px);
+  width: 300px;
+  z-index: 10000;
+}
