@@ -12,6 +12,11 @@ These guys make it simple. Just ask a simple question and then let them enter. W
 
 Enjoy!
 
+# Example
+
+If you want to see a live example of the GDPR.js library in action, check it out here:
+
+https://gdpr.inversoft.com
 
 ## Download and Installation
 
