@@ -13,7 +13,8 @@ h6 {
 }
 
 hr.star-light,
-hr.star-dark {
+hr.star-dark,
+hr.star-danger {
   max-width: 15rem;
   padding: 0;
   text-align: center;
@@ -24,7 +25,8 @@ hr.star-dark {
 }
 
 hr.star-light:after,
-hr.star-dark:after {
+hr.star-dark:after,
+hr.star-danger:after {
   position: relative;
   top: -.8em;
   display: inline-block;
@@ -34,13 +36,19 @@ hr.star-dark:after {
   font-size: 2em;
 }
 
-hr.star-light {
+hr.star-light,
+hr.star-danger {
   border-color: #fff;
 }
 
 hr.star-light:after {
   color: #fff;
   background-color: #18BC9C;
+}
+
+hr.star-danger:after {
+  color: #fff;
+  background-color: #dc3545;
 }
 
 hr.star-dark {

@@ -3,6 +3,7 @@
 .gdpr-modal {
   background: white;
   box-shadow: 3px 3px 10px 0 #222;
+  display: none;
   height: 400px;
   left: calc(50vw - 125px);
   padding: 10px;
