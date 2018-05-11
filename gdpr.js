@@ -23,7 +23,7 @@ GDPR.prototype = {
     this._storeAnswer('no');
     this.overlay.parentNode.removeChild(this.overlay);
     this.element.style.display = 'none';
-    document.documentElement.style.overflow = '';
+    document.body.style.overflow = '';
   },
 
   _handleYesClick: function() {
@@ -37,7 +37,7 @@ GDPR.prototype = {
 
   _openModal: function() {
     console.debug('No answer');
-    document.documentElement.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
 
     // Create the overlay
     this.overlay = document.createElement('DIV');
