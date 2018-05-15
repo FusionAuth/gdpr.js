@@ -52,6 +52,12 @@ The first parameter to the constructor is the popup element and the second is th
 
 That's it!
 
+## More GDPR Info
+
+If you are looking for more resources on GDPR, check out our blog post that lists a bunch: 
+
+https://www.inversoft.com/blog/2018/05/15/list-of-gdpr-resources/
+
 ## Bugs and Issues
 
 Have a bug or an issue with this template? [Open a new issue](https://github.com/inversoft/gdpr.js/issues) here on GitHub.
