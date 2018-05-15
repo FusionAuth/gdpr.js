@@ -19,11 +19,13 @@ var GDPR = function(element, euURL) {
 };
 
 GDPR.prototype = {
-  _handleNoClick: function() {
+  _handleNoClick: function(event) {
     this._storeAnswer('no');
     this.overlay.parentNode.removeChild(this.overlay);
     this.element.style.display = 'none';
     document.body.style.overflow = '';
+    event.preventDefault();
+    event.stopPropagation();
   },
 
   _handleYesClick: function() {
