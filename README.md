@@ -64,7 +64,7 @@ Have a bug or an issue with this template? [Open a new issue](https://github.com
 
 ## About
 
-This library was written by [Brian Pontarelli](https://www.linkedin.com/in/voidmain/) and the [FusionAuth team](https://fusionauth.io). [FusionAuth](https://fusionauth.io) is a GDPR compliant Customer Identity and Access Management platform (CIAM). If you are looking for a company that can help you with GDPR or provides awesome software, check us out.
+This library was written by [Brian Pontarelli](https://www.linkedin.com/in/voidmain/) and the FusionAuth team. [FusionAuth](https://fusionauth.io) is a GDPR compliant Customer Identity and Access Management platform (CIAM). If you are looking for a company that can help you with GDPR or provides awesome software, check us out.
 
 ## Copyright and License
 
