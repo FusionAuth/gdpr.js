@@ -22,9 +22,9 @@ https://gdpr.inversoft.com
 
 Follow these steps to get started:
 
-1. Download the library from https://raw.githubusercontent.com/inversoft/gdpr.js/master/gdpr.js
+1. Download the library from https://raw.githubusercontent.com/fusionauth/gdpr.js/master/gdpr.js
 2. Install it into your project
-3. Download our example CSS from https://raw.githubusercontent.com/inversoft/gdpr.js/master/gdpr.css
+3. Download our example CSS from https://raw.githubusercontent.com/fusionauth/gdpr.js/master/gdpr.css
 4. Install it into your project and tweak it however you want
 
 Next, you'll need to add some HTML that defines your popup. Here's an example:
@@ -60,12 +60,12 @@ https://www.inversoft.com/blog/2018/05/15/list-of-gdpr-resources/
 
 ## Bugs and Issues
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/inversoft/gdpr.js/issues) here on GitHub.
+Have a bug or an issue with this template? [Open a new issue](https://github.com/fusionauth/gdpr.js/issues) here on GitHub.
 
 ## About
 
-This library was written by [Brian Pontarelli](https://www.linkedin.com/in/voidmain/) and the [Inversoft team](https://www.inversoft.com). Our [Passport product](https://www.inversoft.com/products/identity-user-management) is a GDPR compliant Customer Identity and Access Management platform (CIAM). If you are looking for a company that can help you with GDPR or provides awesome software, check us out.
+This library was written by [Brian Pontarelli](https://www.linkedin.com/in/voidmain/) and the [Inversoft team](https://www.inversoft.com). [FusionAutth](https://fusionauth.io) is a GDPR compliant Customer Identity and Access Management platform (CIAM). If you are looking for a company that can help you with GDPR or provides awesome software, check us out.
 
 ## Copyright and License
 
-Copyright 2018 Inversoft Inc. Code released under the [Apache 2](https://github.com/inversoft/gdpr.js/blob/master/LICENSE) license.
+Copyright 2018 Inversoft Inc. Code released under the [Apache 2](https://github.com/fusionauth/gdpr.js/blob/master/LICENSE) license.
